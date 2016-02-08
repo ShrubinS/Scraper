@@ -1,4 +1,7 @@
 import scrapy
+from datetime import datetime
+import logging
+from twisted.python import log
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import HtmlXPathSelector
@@ -11,6 +14,14 @@ class DmozSpider(CrawlSpider):
     allowed_domains = ["www.amazon.com"]
     start_urls = ["http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones"
     ]
+    
+    def __init__(self, name=None, **kwargs):       
+        logFormatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
+        rootLogger = logging.getLogger()
+        fileHandler = logging.FileHandler("{0}.log".format(self.name))
+        fileHandler.setFormatter(logFormatter)
+        rootLogger.addHandler(fileHandler)
+        super(DmozSpider, self).__init__(name, **kwargs)
     
     def parse(self, response):
         for next_url in response.xpath('//*[@id="pagnNextLink"]/@href'):

@@ -1,0 +1,546 @@
+2016-02-08 17:16:02,118 [MainThread  ] [DEBUG]  Retrieving credentials from metadata server.
+2016-02-08 17:16:02,121 [MainThread  ] [ERROR]  Caught exception reading instance data
+Traceback (most recent call last):
+  File "E:\Anaconda2\lib\site-packages\boto\utils.py", line 210, in retry_url
+    r = opener.open(req, timeout=timeout)
+  File "E:\Anaconda2\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "E:\Anaconda2\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "E:\Anaconda2\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "E:\Anaconda2\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "E:\Anaconda2\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10051] A socket operation was attempted to an unreachable network>
+2016-02-08 17:16:02,124 [MainThread  ] [ERROR]  Unable to read instance data, giving up
+2016-02-08 17:16:02,151 [MainThread  ] [INFO ]  Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-02-08 17:16:02,161 [MainThread  ] [INFO ]  Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-02-08 17:16:02,184 [MainThread  ] [INFO ]  Enabled item pipelines: MyImagesPipeline
+2016-02-08 17:16:02,187 [MainThread  ] [INFO ]  Spider opened
+2016-02-08 17:16:02,190 [MainThread  ] [INFO ]  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-02-08 17:16:02,194 [MainThread  ] [DEBUG]  Telnet console listening on 127.0.0.1:6024
+2016-02-08 17:16:03,892 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones> (referer: None)
+2016-02-08 17:16:03,994 [MainThread  ] [ERROR]  Spider error processing <GET http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones> (referer: None)
+Traceback (most recent call last):
+  File "E:\Anaconda2\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "E:\Anaconda2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "E:\Anaconda2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "E:\Anaconda2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "E:\Anaconda2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\Desktop\Scrapy\Scrapy Project\amazon\amazon\spiders\amazon-spider.py", line 27, in parse
+    logging.error(message)
+NameError: global name 'message' is not defined
+2016-02-08 17:16:04,002 [MainThread  ] [INFO ]  Closing spider (finished)
+2016-02-08 17:16:04,005 [MainThread  ] [INFO ]  Dumping Scrapy stats:
+{'downloader/request_bytes': 268,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 57419,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 2, 8, 11, 46, 4, 3000),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2016, 2, 8, 11, 46, 2, 191000)}
+2016-02-08 17:16:04,006 [MainThread  ] [INFO ]  Spider closed (finished)
+2016-02-08 17:16:43,051 [MainThread  ] [DEBUG]  Retrieving credentials from metadata server.
+2016-02-08 17:16:43,053 [MainThread  ] [ERROR]  Caught exception reading instance data
+Traceback (most recent call last):
+  File "E:\Anaconda2\lib\site-packages\boto\utils.py", line 210, in retry_url
+    r = opener.open(req, timeout=timeout)
+  File "E:\Anaconda2\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "E:\Anaconda2\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "E:\Anaconda2\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "E:\Anaconda2\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "E:\Anaconda2\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 10051] A socket operation was attempted to an unreachable network>
+2016-02-08 17:16:43,056 [MainThread  ] [ERROR]  Unable to read instance data, giving up
+2016-02-08 17:16:43,082 [MainThread  ] [INFO ]  Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-02-08 17:16:43,092 [MainThread  ] [INFO ]  Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-02-08 17:16:43,115 [MainThread  ] [INFO ]  Enabled item pipelines: MyImagesPipeline
+2016-02-08 17:16:43,115 [MainThread  ] [INFO ]  Spider opened
+2016-02-08 17:16:43,119 [MainThread  ] [INFO ]  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-02-08 17:16:43,122 [MainThread  ] [DEBUG]  Telnet console listening on 127.0.0.1:6024
+2016-02-08 17:16:46,430 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones> (referer: None)
+2016-02-08 17:16:48,404 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/NOTE3-Style-Android-Smartphone-Screen-Camera/dp/B00M6RWWL0> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:48,542 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51uUJkX2WEL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:48,644 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/NOTE3-Style-Android-Smartphone-Screen-Camera/dp/B00M6RWWL0>
+{'features': [u' Black Color',
+              u' Dual SIM,IPS Screen,Quad Core,WiFi,Dual Camera',
+              u' NOTE3-Style 5.7" 3G Android 4.2'],
+ 'image_paths': ['full/6e46e334ba7a681dff1d94685d452cab7d20afad.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51uUJkX2WEL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/NOTE3-Style-Android-Smartphone-Screen-Camera/dp/B00M6RWWL0',
+ 'title': [u'NOTE3-Style 5.7" 3G Android 4.2 Smartphone(Dual SIM,IPS Screen,Quad Core,WiFi,Dual Camera) -Black Color']}
+2016-02-08 17:16:50,530 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Boost-Mobile-Card-Activation-Code/dp/B006ZB7O16> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:50,540 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Ulefone-Unlocked-Smart-Phone-MTK6582/dp/B00GCGH8GA> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:50,668 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41z1ZOwCAwL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:50,720 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51UWvHov4XL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:50,769 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Boost-Mobile-Card-Activation-Code/dp/B006ZB7O16>
+{'features': [u' Boost Mobile SIM Card Replacement',
+              u' NO LONGER SUPPORTED BY BOOST MOBILE NETWORK, NEW ACTIVATIONS DO NOT WORK',
+              u' Zero ($0.00) credit incldued',
+              u' Works with iDen type phones only (No GSM or CDMA type phones). IF YOU DO NOT HAVE AN IDEN PHONE IT WILL NOT WORK',
+              u' This is a legacy product and will not work for new boost mobile SIM activations. Do not buy this product unless you have an already acticated iDEN Boost Mobile phone.'],
+ 'image_paths': ['full/bb918e511bc05b9ee6a2dc517e82a093db6d1aae.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41z1ZOwCAwL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Boost-Mobile-Card-Activation-Code/dp/B006ZB7O16',
+ 'title': [u'Boost Mobile 64K SIM Card with Activation Code (NEW) - for iDEN type phones only (No GSM or CDMA)']}
+2016-02-08 17:16:50,821 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Ulefone-Unlocked-Smart-Phone-MTK6582/dp/B00GCGH8GA>
+{'features': [u' Unlocked world GSM phone. 3G - 850/2100, 2G -850/900/1800/1900. Compatible with at&t, T-Mobile, Straight Talk, Simple Mobile and other GSM networks. Please make sure your SIM card is not locked with PUK code',
+              u' 3G - 850/2100 bands. Fully compatible with at&t at 3.75G, compatilble with T-Mobile at 2G. For other network such as Straight Talk, Trac fone, Simple Mobile or Net 10 will require a manual APN setup',
+              u' Free Tether - Use your 3G data service as a WiFi hot spot and connect your notebook, ipad or other device for free. No need to pay monthly tether fee',
+              u' Dual SIM Card Dual Standby(one Micro SIM card and one standard SIM card)',
+              u' Operation System Android 4.3 CPU MTK6582 Cortex-A7 Quad Core 1.3GHz GPU: Mali-400MP',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin.'],
+ 'image_paths': ['full/a8639856d118aad95d409a9334ba5c4c1af0d0f5.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51UWvHov4XL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Ulefone-Unlocked-Smart-Phone-MTK6582/dp/B00GCGH8GA',
+ 'title': [u'Ulefone Unlocked Smart Phone 5.5 Inch Quad Core MTK6582, 1GB, 8GB, White']}
+2016-02-08 17:16:50,918 [MainThread  ] [DEBUG]  Redirecting (301) to <GET http://www.amazon.com/BLU-Studio-7-0-Unlocked-Smartphone/dp/B013X0V16K> from <GET http://www.amazon.com/BLU-Studio-7-0--Unlocked-Smartphone/dp/B013X0V16K>
+2016-02-08 17:16:51,687 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Unlocked-Smartphone-Processor-Bluetooth-Contract/dp/B00VRGRME8> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:51,834 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41RVNpEIqEL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:51,934 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Unlocked-Smartphone-Processor-Bluetooth-Contract/dp/B00VRGRME8>
+{'features': [u' 2G Network GSM:900/1800/ 850/1900 MHz',
+              u' 3G Network WCDMA:850/1900MHz',
+              u' Camera Back:0.3MP Front:0.3MP',
+              u' Dimensions 123.5*63.2*10.5mm',
+              u' Data segment GPRS,EDGE,HSPA+. Note: Please make sure you have torn off insulating film on top of the battery before use!!'],
+ 'image_paths': ['full/806f4b333db2ff463da5fa9a5db8f2b65baa8d87.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41RVNpEIqEL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Unlocked-Smartphone-Processor-Bluetooth-Contract/dp/B00VRGRME8',
+ 'title': [u'Unlocked Smartphone 4.0 Inch Dual SIM Android 4.4 with Dual Core 1.0ghz Processor GSM / 3g/ Wifi Network Bluetooth No Contract Phones Mobile Phone (Purple)']}
+2016-02-08 17:16:52,082 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Coofone-Ultra-Credit-Mobile-Unlocked/dp/B00QWQIBSY> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:52,229 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41Vek2kQ0ML._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:52,331 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Coofone-Ultra-Credit-Mobile-Unlocked/dp/B00QWQIBSY>
+{'features': [u" Ultra slim, credit card size, easy to carry and convenient to use;RAM 24MB, ROM 32MB;It's ultra-small and lightweight, fun to play with as a backup phone;; it is the size of a credit card and like 3 credit cards thick, so it fits very well into a wallet.",
+              u' 0.96 inch bright blue OLED screen, good for eyes;Language Option: English, Spanish, Portuguese, Russian;It is the size of a credit card and like 3 credit cards thick, so it fits very well into a wallet;Comes with a user manual in English.',
+              u' BASIC FUNCTIONS: hands free/phonebook/call center/messaging/file manager/settings/profiles/services;The maximum amount of inbox messages it can store from text messaging is about 40.',
+              u' Measures 85*55*5.9mm, 350mAh capacity; standby time: 48 hours, talking time: 5-6 hours; Package Includes: 1 x Mini Cell phone; 1 x USB Cable;Easy to insert a standard-sized SIM card, but it takes a little care to get the back open and insert a memory card.',
+              u' Bluetooth 3.0, BT Dialer; you can dial numbers or view contacts stored on the connected device via Bluetooth; work with At&t, T-Mobile, but not with Verizon. You will need a standard SIM card, NOT a Micro SIM card. It only works in a 2G GSM network, not CDMA network. You can customize the ring tone. Original Password: 1122. No Bluetooth headphone support.'],
+ 'image_paths': ['full/0954bdac72426c335cf582b36c5cf8266fea43a2.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41Vek2kQ0ML._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Coofone-Ultra-Credit-Mobile-Unlocked/dp/B00QWQIBSY',
+ 'title': [u'Coofone Ultra Slim Super Thin Credit Card Size Mini Cell Phone 2G GSM Mobile Phone Unlocked (Black)']}
+2016-02-08 17:16:53,589 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B00PFSU2UK> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:53,769 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/31BpffujJYL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:53,871 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B00PFSU2UK>
+{'features': [u' SOS button can call up to 5 contacts in case of emergency',
+              u' Easy Charging Dock, Can save up to 300 Phone book entries, Loud Speaker',
+              u' M1 & M2 Direct dial, Speed dials,FM radio',
+              u' Support Bluetooth connection,',
+              u' MP3 file, Micro-SD Card up to 8GB(not include)',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin.'],
+ 'image_paths': ['full/7c89790dce710dcbb5a614e4a06489e1ff4c4517.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/31BpffujJYL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B00PFSU2UK',
+ 'title': [u'Quad-band Unlocked GSM Flip Seniors Cell Phone, SOS Button, Large Keyboard, Black Color']}
+2016-02-08 17:16:54,677 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/inDigi-Phablet-713-2Ga-Unlocked-Android-Phablet/dp/B00CV4SYS8> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:54,818 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51y0Fpio5GL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:54,920 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/inDigi-Phablet-713-2Ga-Unlocked-Android-Phablet/dp/B00CV4SYS8>
+{'features': [u' 7.0 inches Android 4.0 Tablet PC Smart Pad + Phone (Call as mobile phone) with Google Play Store and Capacitive Touch Screen [Free Bluetooth Headset]',
+              u' Allwinner A13 Cortex-A8 Processor 1.5GHz CPU, 4GB Internal Memory, WiFi Capability, Bluetooth, Dual-Camera and more.',
+              u' Make and receive calls directly from the tablet itself with the built-in MIC and speaker',
+              u' WiFi 802.11 b/g/n Support - Connect to internet for A full Internet experience | Bluetooth enabled - connect to any bluetooth headset handsfree',
+              u' Support Google Play Store - access to millions of free and paid-for applications available to download straight to your phablet.',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin.'],
+ 'image_paths': ['full/4736935f67f6b72aea8bcce8a8ec2a10316667ac.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51y0Fpio5GL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/inDigi-Phablet-713-2Ga-Unlocked-Android-Phablet/dp/B00CV4SYS8',
+ 'title': [u'inDigi Phablet-713-2Ga Unlocked 7-Inch GSM Android 4.0 ICS Smart Cell Phone + Tablet PC (2-in-1 Phablet) with Google Play Store + 32GB MicroSD Card']}
+2016-02-08 17:16:55,385 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Unlocked-Branded-Android-Smartphone-Black/dp/B00YG5AM3U> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:55,546 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41DQQbZ3PXL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:55,648 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Unlocked-Branded-Android-Smartphone-Black/dp/B00YG5AM3U>
+{'features': [u' 1.\tThe cheapest unlocked smart phone of 3.5inch all over the world, excellent value with no contract, you can change to another service provider freely.',
+              u' 2.\tUsing this phone as a backup phone or for a trip abroad, Dual SIM (Micro +Normal) design makes it easy to switch between countries, perfectly for a trip and business.',
+              u' 3.\tEasily fits in your pocket, even with skinny jeans. Thinner frame/closer joints/not heavy, provide the best Scratch-resistant and comfortable touch for single hand operation.',
+              u' 4.\t3.5" Multi-touch Display, Android 4.4, 1.0GHz Dual-Core Processor, will let you stay in touch with all your apps and social networks. It also has a good music quality, 0.3M Front and rear cameras, easy for entertainment, such as music, photo, video and internet surf.',
+              u' 5.\tOnly fits for 2G Network GSM: 900/1800/ 850/1900 MHz. Supports Wi-Fi. Hotspot and tethering capabilities, GPS for navigation and location services; Bluetooth 3.0, Speed Micro USB 2.0. Colorful life you can choose (5 colors optional).'],
+ 'image_paths': ['full/1e7c5bf26408b1d9b460f03862f8f9a0b5b0321f.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41DQQbZ3PXL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Unlocked-Branded-Android-Smartphone-Black/dp/B00YG5AM3U',
+ 'title': [u'Unlocked Dual SIM Branded Android 4.4 Dual Core Smartphone (Black) - Decent 3.5 Inch Multi-touch Display GSM 2G & Wifi Mobile Phone, Original without Contract']}
+2016-02-08 17:16:56,207 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Lenovo-Business-Flashlight-Bluetooth-Network/dp/B00LL84E84> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:56,355 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41tTuso7W3L._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:56,456 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Lenovo-Business-Flashlight-Bluetooth-Network/dp/B00LL84E84>
+{'features': [u' Model: Lenovo MA388',
+              u' Display: 3.5 inch HVGA Screen 480x320 pixels',
+              u' Band (Network): 2G GSM 900/1800 MHz',
+              u' CPU: MTK6250 Single Core',
+              u' SIM Card: Dual SIM'],
+ 'image_paths': ['full/2fe257868d755f7bb43e3e6caa43fd32cef83fc5.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41tTuso7W3L._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Lenovo-Business-Flashlight-Bluetooth-Network/dp/B00LL84E84',
+ 'title': [u'Lenovo MA388 Cheap Business / Elders Flip Cell Phone 3.5 Inch with FM / Flashlight / Camera / Bluetooth, Dual SIM GSM Network']}
+2016-02-08 17:16:57,960 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B013T82Z0W> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:58,096 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41W5PjcvPnL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:58,197 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B013T82Z0W>
+{'features': [u' SOS button can call up to 5 contacts in case of emergency',
+              u' Easy Charging Dock, Can save up to 300 Phone book entries, Loud Speaker',
+              u' M1 & M2 Direct dial, Speed dials,FM radio',
+              u' Support Bluetooth connection,'],
+ 'image_paths': ['full/a5c3efe3f51bad28703610d26d9bfa628f5cfce1.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41W5PjcvPnL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Quad-band-Unlocked-Seniors-Button-Keyboard/dp/B013T82Z0W',
+ 'title': [u'Quad-band Unlocked GSM Flip Seniors Cell Phone, SOS Button, Large Keyboard,gsm Only(2g Net Only)']}
+2016-02-08 17:16:58,582 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Acatim-Unblocked-Waterproof-Shockproof-Flashlight/dp/B01824MEEU> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:58,589 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB84E> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:58,721 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51V6Hu1CMwL._SX300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:58,785 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51Bhh4q506L._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:58,822 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Acatim-Unblocked-Waterproof-Shockproof-Flashlight/dp/B01824MEEU>
+{'features': [u' SIM Card Configuration: Dual sim cards, dual standby',
+              u' Network Support: GSM 850/900/1800/1901MHz',
+              u' Language : English, French, Portuguese, Russian, Espanol, Italiano, Deutsch, Hebrew',
+              u' Supported Audio Formats: MP4, MIDI, AMR, AAC, WAV',
+              u' Unlocked Waterproof Dustproof Shockproof GSM Camera 5000mAh Mobile Cellphone\uff0cCharger Flashlight Functions'],
+ 'image_paths': ['full/51fa52123bb8ef557e3d2ce1c3b6399f2c8b7c63.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51V6Hu1CMwL._SX300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Acatim-Unblocked-Waterproof-Shockproof-Flashlight/dp/B01824MEEU',
+ 'title': [u'Acatim Unlocked Military Version IP67 Unblocked Waterproof Dustproof Shockproof Cell Phones with 8GB TF Card ,Dual Sim Cards , Standby 60days with LED Flashlight & 5000mAh Power Bank Function(Black)']}
+2016-02-08 17:16:58,888 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB84E>
+{'features': [u' Unlocked Dual SIM Phone, SC8830 Quad Core, 5.0" FWVGA Capacitive Touch Screen LCD.',
+              u' Wireless transmission: Bluetooth, Wifi; Support GPRS / Touch panel / JAVA',
+              u' Android 4.4.2 Operation System.',
+              u' Dual camera, 1700mAh Battery, Dual speaker, Support multi-language.',
+              u' Pls Sure your SIM card is Post-paid SIM card, and it Support 2G / 3G Network: 2G--GSM 850 / 900 / 1800 / 1900MHz; 3G--WCDMA 850 / 2100MHz.'],
+ 'image_paths': ['full/d70e7dc36cc1034be95e1073fe99cb95636ca80a.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51Bhh4q506L._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB84E',
+ 'title': [u'Padgene 5" Android 4.4 Unlocked Quad Core Dual Sim Smartphone Cell Phone (Gold)']}
+2016-02-08 17:16:58,954 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/HTC-One-M7-Unlocked-Android/dp/B00KFKA6CC> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:16:59,099 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51GqHKjM%2BGL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:16:59,201 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/HTC-One-M7-Unlocked-Android/dp/B00KFKA6CC>
+{'features': [u' Display: 4.7-inches, Resolution: 1080 x 1920 pixels',
+              u' Camera: 4 MP, f/2.0, 28mm, autofocus, OIS, LED flash',
+              u' Processor: Quad-core 1.7 GHz',
+              u' OS: Android 4.2 (Jelly Bean)',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20 and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin.'],
+ 'image_paths': ['full/7dffe7e1da1259e012ae1f0e8ded922d1fe52444.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51GqHKjM%2BGL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/HTC-One-M7-Unlocked-Android/dp/B00KFKA6CC',
+ 'title': [u'HTC One M7 32GB Unlocked GSM 4G LTE Android Cell Phone - Silver']}
+2016-02-08 17:17:00,128 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/JUNING-Unlocked-Anroid-Smartphone-MTK6580/dp/B01AWY5O4A> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:00,256 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41KSv7Tn9KL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:00,358 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/JUNING-Unlocked-Anroid-Smartphone-MTK6580/dp/B01AWY5O4A>
+{'features': [u' Unlocked Dual Sim Smartphone, with Android 5.1 Lollipop',
+              u' 5.0" qHD Display (960x540)',
+              u' CUP:MTK6580 Quad Core 1.3GHz ; GPU:Mali-400MP ; RAM&ROM: 512MB + 4GB ROM',
+              u' Dual Camera:Back-camera : 5.0MP;Front camera: 0.3MP',
+              u' 3G (WCDMA 850/2100) and 2G Quad Band(GSM 850/900/1800/1900) network , please buy the GSM/WCDMA SIM card. Do not buy the CDMA SIM card from them.'],
+ 'image_paths': ['full/d15e6b0ea19744c0bddc3c29bc7ca96fea61f652.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41KSv7Tn9KL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/JUNING-Unlocked-Anroid-Smartphone-MTK6580/dp/B01AWY5O4A',
+ 'title': [u'JUNING(TM) Unlocked Anroid 5.1 Smartphone 5.0" Dual SIM GSM Cell Phones 3G Moblie phone MTK6580 Quad Core ROM 4GB 5.0MP Camera Pink']}
+2016-02-08 17:17:00,497 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/BLU-Studio-7-0-Unlocked-Smartphone/dp/B013X0V16K> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:00,503 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:00,671 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41mHQe4A94L._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:00,773 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/BLU-Studio-7-0-Unlocked-Smartphone/dp/B013X0V16K>
+{'features': [u' Unlocked Dual Sim Smartphone, with Android 5.0 Lollipop',
+              u' 8GB internal storage 1GB RAM with Micro SD Slot up to 64GB',
+              u' 1.3 GHz Quad Core Processor with Mail 400 GPU',
+              u' 5MP Main Camera, VGA Front Camera',
+              u' GSM Quad Band 3G HSPA+ (850/1700/1900): US Compatibility Nationwide on all GSM Networks including AT&T, T-Mobile, Cricket, Metro PCS, Straight Talk and others'],
+ 'image_paths': ['full/6d0746fbe809050c365dd98ab579630adb477020.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41mHQe4A94L._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/BLU-Studio-7-0-Unlocked-Smartphone/dp/B013X0V16K',
+ 'title': [u'BLU Studio 7.0 II -Unlocked Smartphone - US GSM - Gold']}
+2016-02-08 17:17:02,655 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/WALSUN-Android-Smartphone-Screen-Camera/dp/B00S2I15XI> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:02,665 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Apple-iPhone-MD440LL-Smartphone-Refurbished/dp/B00YV051EU> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:02,673 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/O1-Unlocked-screen-Android-Smartphone/dp/B01A792CL8> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:02,802 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51lSMrUkgLL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:02,898 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41pcOEG33UL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:02,940 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/WALSUN-Android-Smartphone-Screen-Camera/dp/B00S2I15XI>
+{'features': [u' Note4 Style WALSUN 5.7" 3G Android 4.2 Smartphone(Dual SIM,IPS Screen,Quad Core,WiFi,Dual Camera)-Black'],
+ 'image_paths': ['full/28378efa2caae572f070f7339c6191dc25ea65cb.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51lSMrUkgLL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/WALSUN-Android-Smartphone-Screen-Camera/dp/B00S2I15XI',
+ 'title': [u'Note4 Style WALSUN 5.7" 3G Android 4.2 Smartphone(Dual SIM,IPS Screen,Quad Core,WiFi,Dual Camera)-Black']}
+2016-02-08 17:17:03,000 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Apple-iPhone-MD440LL-Smartphone-Refurbished/dp/B00YV051EU>
+{'features': [u' This Certified Refurbished product is factory refurbished, shows limited or no wear, and includes all original accessories plus a 90-day warranty.',
+              u' Item will work with Verizon or Verizon supported carrier ONLY.',
+              u' 8GB internal storage - 1 GHz Cortex-A8 CPU - 512 MB RAM',
+              u' iOS 4 - upgradable',
+              u' 5MP camera - 2592 x 1936 pixels, autofocus, LED flash'],
+ 'image_paths': ['full/cb3f35df872962cba56d84c2be4bec8d1d762d38.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41pcOEG33UL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Apple-iPhone-MD440LL-Smartphone-Refurbished/dp/B00YV051EU',
+ 'title': [u'Apple iPhone 4 (MD440LL/A) - 8GB Smartphone - White - Locked Verizon CDMA (Certified Refurbished)']}
+2016-02-08 17:17:04,680 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/2016-Unlocked-Branded-Android-Smartphone/dp/B016ZOJY1A> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:04,819 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41c718SeapL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:04,920 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/2016-Unlocked-Branded-Android-Smartphone/dp/B016ZOJY1A>
+{'features': [u' 1. The cheapest unlocked smart phone of 3.5inch all over the world, excellent value with no contract, you can change to another service provider freely.Note: Please make sure you have torn off insulating film on top of the battery before use!!!',
+              u' 2. Using this phone as a backup phone or for a trip abroad, Dual SIM (Micro +Normal) design makes it easy to switch between countries, perfectly for a trip and business.',
+              u' 3. Easily fits in your pocket, even with skinny jeans. Thinner frame/closer joints/not heavy, provide the best Scratch-resistant and comfortable touch for single hand operation.',
+              u' 4. 3.5" Multi-touch Display, Android 4.4, 1.0GHz Dual-Core Processor, will let you stay in touch with all your apps and social networks. It also has a good music quality, 0.3M Front and rear cameras, easy for entertainment, such as music, photo, video and internet surf.',
+              u' 5. Only fits for 2G Network GSM: 900/1800/ 850/1900 MHz. Supports Wi-Fi. Hotspot and tethering capabilities, GPS for navigation and location services; Bluetooth 3.0, Speed Micro USB 2.0. Colorful life you can choose (5 colors optional).'],
+ 'image_paths': ['full/abb987fccfc17da1b6b810265fa7ad3e6913d308.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41c718SeapL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/2016-Unlocked-Branded-Android-Smartphone/dp/B016ZOJY1A',
+ 'title': [u'2016 Unlocked Dual SIM Branded Android 4.4 Dual Core Smartphone - Decent 3.5 Inch Multi-touch Display GSM 2g Wifi Cell Phone, Original Without Contract (Red)']}
+2016-02-08 17:17:05,066 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:05,811 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Padgene-Version-Unlocked-Smartphone-Included/dp/B016JVLQ92> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:06,184 [MainThread  ] [DEBUG]  Crawled (200) <GET http://ecx.images-amazon.com/images/I/41SBBN4fHwL._SY300_QL70_.jpg> (referer: None)
+2016-02-08 17:17:06,184 [MainThread  ] [DEBUG]  File (downloaded): Downloaded file from <GET http://ecx.images-amazon.com/images/I/41SBBN4fHwL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:06,321 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/O1-Unlocked-screen-Android-Smartphone/dp/B01A792CL8>
+{'features': [u' 6.0 inch IPS screen', u' smartphone'],
+ 'image_paths': ['full/55c2e4c9be072d1587fec780159462d8edb62d2a.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41SBBN4fHwL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/O1-Unlocked-screen-Android-Smartphone/dp/B01A792CL8',
+ 'title': [u'X-bo O1 Unlocked 6.0 inch IPS screen 3g Android 5.1 Smartphone Mobile Phone (Dual Sim ,wifi,dual Camera) Cell Phones']}
+2016-02-08 17:17:06,450 [MainThread  ] [DEBUG]  Crawled (200) <GET http://ecx.images-amazon.com/images/I/51YxtRWs2EL._SY300_QL70_.jpg> (referer: None)
+2016-02-08 17:17:06,451 [MainThread  ] [DEBUG]  File (downloaded): Downloaded file from <GET http://ecx.images-amazon.com/images/I/51YxtRWs2EL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:06,563 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Padgene-Version-Unlocked-Smartphone-Included/dp/B016JVLQ92>
+{'features': [u' Android 5.1 Operation System. Phone size: 165.5* 84.8*8.5mm. (L*W*H).',
+              u' 4 cores, dual Standby, dual SIM card slots. Pls make sure your card is postpaid card.',
+              u' Multi-function. G-sensor, Bluetooth, GPS, Wifi, Personal Hotspot, MP3 player, Mp4 player, Gallery, Sound Recorder, Videos, FM Radio, Torch, Google Search, Gmail, Play store etc.',
+              u' Dual camera. Back camera is 5.0MP with flash light; Front camera is 2.0MP.',
+              u' How to install SIM card? http://v.youku.com/v_show/id_XMTQyMjcxNjUxNg==.html'],
+ 'image_paths': ['full/9fd567c6f4a55d318466e840c7a206a7d3522168.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51YxtRWs2EL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Padgene-Version-Unlocked-Smartphone-Included/dp/B016JVLQ92',
+ 'title': [u'Padgene New Version Vogue 6" Android 5.1 Unlocked Smartphone, 4 Cores, Dual Sim, Dual Camera, 2G / 3G GSM Smartphone ( Case Included ), Gold']}
+2016-02-08 17:17:07,637 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Twinbuys-M5-Fashionable-Mobile-Positioning/dp/B00MXX90E4> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:07,721 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB8ZS> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:07,802 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41vxoHbLEEL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:07,874 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51KD9FCLtoL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:07,904 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Twinbuys-M5-Fashionable-Mobile-Positioning/dp/B00MXX90E4>
+{'features': [u' Display Size: 1.0 inch OLED Screen',
+              u' GPRS Mobile Positioning function',
+              u' Ultra-low radiation',
+              u' Multi-language (Option): English, French, German, Italian, Spanish , Portuguese, Russian, Arabic, Indonesian',
+              u' Dual band, GSM Network: Band (2G): GSM 850/900/1800/1900MHz'],
+ 'image_paths': ['full/0fd1438b2490a8b16aca5b81b010cf3c97d16f14.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41vxoHbLEEL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Twinbuys-M5-Fashionable-Mobile-Positioning/dp/B00MXX90E4',
+ 'title': [u'Twinbuys M5, 1.0 Inch 4.5mm Ultra Thin Fashionable Mini Mobile Positioning Card Phone, Micro SIM (blue)']}
+2016-02-08 17:17:07,974 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB8ZS>
+{'features': [u' Unlocked Dual SIM Phone, SC8830 Quad Core, 5.0" FWVGA Capacitive Touch Screen LCD.',
+              u' Wireless transmission: Bluetooth, Wifi; Support GPRS / Touch panel / JAVA',
+              u' Android 4.4.2 Operation System.',
+              u' Dual camera, 1700mAh Battery, Dual speaker, Support multi-language.',
+              u' Pls Sure your SIM card is Post-paid SIM card, and it Support 2G / 3G Network: 2G--GSM 850 / 900 / 1800 / 1900MHz; 3G--WCDMA 850 / 2100MHz.'],
+ 'image_paths': ['full/4acfc54df72cb259ba5ee2bc0a0c13e16c468e88.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51KD9FCLtoL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Padgene-Android-Unlocked-Smartphone-Phone/dp/B00Y7MB8ZS',
+ 'title': [u'Padgene 5" Android 4.4 Unlocked Quad Core Dual Sim Smartphone Cell Phone (Grey)']}
+2016-02-08 17:17:08,713 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Apple-iPhone-mobile-phone-MD865LL/dp/B00AC7WWGG> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:08,854 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/414A-kfMPAL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:08,956 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Apple-iPhone-mobile-phone-MD865LL/dp/B00AC7WWGG>
+{'features': [u' 885909630523',
+              u' Black',
+              u' Apple',
+              u' NEW SEALED IN ORIGINAL BOX'],
+ 'image_paths': ['full/fb9385d542bb682d4c61085631b8ed6945033c72.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/414A-kfMPAL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Apple-iPhone-mobile-phone-MD865LL/dp/B00AC7WWGG',
+ 'title': [u'Apple iPhone 4S mobile phone 16Gb Black MD865LL/A - Virgin Mobile']}
+2016-02-08 17:17:09,088 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/POSH-Lynx-A100a-Single-core-Feature/dp/B00II90IWK> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:09,762 [MainThread  ] [DEBUG]  Crawled (200) <GET http://ecx.images-amazon.com/images/I/41A9uwurOSL._SY300_QL70_.jpg> (referer: None)
+2016-02-08 17:17:09,763 [MainThread  ] [DEBUG]  File (downloaded): Downloaded file from <GET http://ecx.images-amazon.com/images/I/41A9uwurOSL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:09,872 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/POSH-Lynx-A100a-Single-core-Feature/dp/B00II90IWK>
+{'features': [u' 1.77" LCD Color Compact Display, FM Radio, Bluetooth, VGA Front Camera with Video',
+              u' Powerful Mediatek MT 6260 Processor, 16MB RAM, 32MB Internal Memory with Micro SD Support',
+              u' GSM QUAD BAND 850/900/1800/1900 - Dual Sim',
+              u' 800mAh Battery, Micro USB Charger, Normal SIM, 1 Year USA Warranty',
+              u' Package Includes: Phone, Wall Adapter, Charging Cable, Headphones, Manual, Battery',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin.'],
+ 'image_paths': ['full/155ee8e01f7d9b45fafcd1618bcd7a459424e2f1.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41A9uwurOSL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/POSH-Lynx-A100a-Single-core-Feature/dp/B00II90IWK',
+ 'title': [u'POSH Lynx A100a - 1.8", Single-core, 32MB , VGA Camera, Dual Sim Feature Phone (Black/ White)']}
+2016-02-08 17:17:10,411 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Unlocked-Smartphone-4-0-Processor-Bluetooth/dp/B00VRGRMBG> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:10,559 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41UBeonsrDL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:10,661 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Unlocked-Smartphone-4-0-Processor-Bluetooth/dp/B00VRGRMBG>
+{'features': [u' 4.0" multi-touch LCD screen, comfortable touch for single hand operation. Easily fits in your pocket, even with skinny jeans. Fashionable 3G Smartphone, 6 Colors optional. Please make sure you have torn off insulating film on top of the battery before use!!',
+              u' Dual SIM card Dual Standby design makes it easy to switch between countries, perfectly for a trip abroad and business as a backup phone.',
+              u' Runs OS Android 4.4/ MTK 6572A/X Dual Core 1.0 Ghz/ 3G HSPA+ up to 21 Mbps / ROM 512MB+ RAM 256MB / 0.3MP Camera / 1350mAh, easy for entertainment, such as music, photo, video and internet surf.',
+              u' 2G Network GSM: 900/1800/ 850/1900 MHz, 3G Network WCDMA: 850/1900MHz or 900/2100 MHz.',
+              u' Unlocked cell phones are compatible with GSM carriers such as AT&T and T-Mobile, but are not compatible with CDMA carriers such as Verizon and Sprint.'],
+ 'image_paths': ['full/f8d06153e7e2d98c07c2bcd38446939398ca21f8.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41UBeonsrDL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Unlocked-Smartphone-4-0-Processor-Bluetooth/dp/B00VRGRMBG',
+ 'title': [u'Unlocked Smartphone 4.0 Inch Dual SIM Android 4.4 with Dual Core 1.0ghz Processor GSM / 3g/ Wifi Network Bluetooth No Contract Phones Mobile Phone (Rose)']}
+2016-02-08 17:17:10,723 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Smartphone-Screen-Unlocked-Mobile-Silver/dp/B016ZQ1NDK> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:10,871 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41NtiOFg-dL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:10,971 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Smartphone-Screen-Unlocked-Mobile-Silver/dp/B016ZQ1NDK>
+{'features': [u' 2G Network GSM:900/1800/ 850/1900 MHz',
+              u' 3G Network WCDMA:850/1900MHz',
+              u' Camera Back:0.3MP Front:0.3MP',
+              u' Dimensions 123.5*63.2*10.5mm',
+              u' Data segment GPRS,EDGE,HSPA+. Note: Please make sure you have torn off insulating film on top of the battery before use!!'],
+ 'image_paths': ['full/6d11e3cd0b42d65233642b55695d9a4e1a454bf4.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41NtiOFg-dL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Smartphone-Screen-Unlocked-Mobile-Silver/dp/B016ZQ1NDK',
+ 'title': [u'Smartphone 1.0g Dual Core Wcdma Dual SIM 4.0 Inch LCD Screen Unlocked Mobile Phone (Silver)']}
+2016-02-08 17:17:12,687 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Unlocked-Anroid-Smartphone-Cellphones-MTK6572/dp/B01ADI8U9Q> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:12,779 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Original-Lenovo-Mtk6592-English-Android/dp/B018JYIXG6> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:12,821 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51W%2BOjGmIeL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:12,921 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Unlocked-Anroid-Smartphone-Cellphones-MTK6572/dp/B01ADI8U9Q>
+{'features': [u' Please open back case to remove the insulating tape on battery before startup!',
+              u' 5.0 inch 540 x 960 Screen System: Android 4.4 MTK6572 Dual Core 1.0GHz Mali-400MP RAM&ROM: 512MB RAM + 4GB ROM',
+              u' Dual Cameras, front camera 0.3MP, back camera 2.0MP',
+              u' Support:Browser, 3G, Calendar, E-book, Wi-Fi, Calculator, MP3, FM, People, MP4, Bluetooth, Sound Recorder, GPS, Alarm',
+              u' 3G (WCDMA 850/2100) and 2G Quad Band International Version (GSM 850/900/1800/1900) network of US Compatible Nationwide on all GSM Networks including AT&T, T-Mobile, H20,Cricket, Tracfone, Straight Talk and others T-Mobile: Lyca, Speedtalk, Go Smart, Simple Mobile, Net10, Straight Talk, Solavei, Ultra Mobile, Telcel America, Walmart Family Mobile. Note:\u3000A SIM card need to be purchased separately. Some network company provide the GSM/WCDMA sim card and CDMA sim card also, please buy the GSM/WCDMA SIM card. Do not buy the CDMA SIM card from them.'],
+ 'image_paths': ['full/37e71abe7382129f8048510bc6cb7b602b756ca8.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51W%2BOjGmIeL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Unlocked-Anroid-Smartphone-Cellphones-MTK6572/dp/B01ADI8U9Q',
+ 'title': [u'LXLG\xae Unlocked Anroid 4.4 Smartphone 5.0" Dual SIM GSM Cellphones 3G Moblie phone MTK6572 Dual Core ROM 4GB 5.0MP Camera -White']}
+2016-02-08 17:17:13,095 [MainThread  ] [DEBUG]  Redirecting (301) to <GET http://www.amazon.com/Sony-Dual-SIM-Unlocked-Phone-U-S-Champagne/dp/B00ASZ00TI> from <GET http://www.amazon.com/Sony-Dual-SIM-Unlocked-Phone--U-S-Champagne/dp/B00ASZ00TI>
+2016-02-08 17:17:13,437 [MainThread  ] [DEBUG]  Crawled (200) <GET http://ecx.images-amazon.com/images/I/41RxHMDwFmL._SY300_QL70_.jpg> (referer: None)
+2016-02-08 17:17:13,437 [MainThread  ] [DEBUG]  File (downloaded): Downloaded file from <GET http://ecx.images-amazon.com/images/I/41RxHMDwFmL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:13,549 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Original-Lenovo-Mtk6592-English-Android/dp/B018JYIXG6>
+{'features': [u' High performance MT6592V Octa core 1.4GHz CPU, excellent processing platform. 5.5-inch(960 * 540) capacitive touchscreen. 5 Mega-pixel AF rear camera with flashlight and 0.3 mega-pixel front camera.',
+              u' Dual SIM Card Dual Standby. Support 2G: GSM 900/1800/1900MHz and 3G: WCDMA 900/2100MHz frequency. Android 4.2 operating system, better reliability and compatibility.',
+              u' 1G RAM + 4GB ROM and support micro SD card / TF card(not included) expansion up to 32GB. Support GPS, Bluetooth, G-sensor, Wifi, etc.',
+              u' Dual Sim Card Dual Standby 2G:GSM 900/1800/1900MHz 3G:WCDMA 900/2100MHz',
+              u' 1 * Lenovo A850+ Smartphone 1 * 3.5mm Earphone 1 * Power Adapter 1 * USB Cable 1 * Battery ?1 * User Manual (Chinese)1 * 2600mAh dodocool Power Bank'],
+ 'image_paths': ['full/826f3938273fbc03a0ced113b85b9b7d4fdfb3fd.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41RxHMDwFmL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Original-Lenovo-Mtk6592-English-Android/dp/B018JYIXG6',
+ 'title': [u'Original Lenovo A850+ 5.5 Inch QHD IPS Mtk6592 Octa Core English Android 4.2 Mobile Cell Phone 1gb 4gb GPS Black/white (Black)']}
+2016-02-08 17:17:14,338 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/HAMSWAN%C2%AE-Waterproof-Dustproof-Shockproof-Bluetooth/dp/B00UMNLQ1W> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:14,345 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Samsung-Galaxy-G318ML-Unlocked-Phone/dp/B0136NMO88> (referer: http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:14,480 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51MJ4pbRl3L._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:14,516 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/414%2BrDTSSBL._SX300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:14,582 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/HAMSWAN%C2%AE-Waterproof-Dustproof-Shockproof-Bluetooth/dp/B00UMNLQ1W>
+{'features': [u' Unlocked Dual SIM Cell Phone, 2G: GSM 850 / 900 / 1800 / 1900 (SIM 1 & SIM 2); Waterproof & Shockproof (IP-67 Certified)',
+              u' MTK6260A; RAM: 8MB ROM: 8MB; TF Card up to 16GB (no including)',
+              u' 2.0 inch TFT Screen 240 x 320 pixel, Camera: Yes, 2.0MP (with LED flash and AF)',
+              u' Additional Features: Bluetooth, Memory Card Slots, FM radio, Message, Calendar, Alarm, etc',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers). Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin'],
+ 'image_paths': ['full/817141e8fc9e7be09dda0eaf2483e99806b80021.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51MJ4pbRl3L._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/HAMSWAN%C2%AE-Waterproof-Dustproof-Shockproof-Bluetooth/dp/B00UMNLQ1W',
+ 'title': [u'HAMSWAN\xae IP67 Waterproof Mobile Phone Dustproof Shockproof Rugged Outdoor Cell Phones Camera Bluetooth Cheap Phone (Yellow)']}
+2016-02-08 17:17:14,618 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Samsung-Galaxy-G318ML-Unlocked-Phone/dp/B0136NMO88>
+{'features': [u' 4-inch TFT Capacitive Multi-Touchscreen',
+              u' 3 Megapixel Camera (2048 x 1536 pixels) w/ LED Flash',
+              u' Internal Memory: 4GB, 512 MB RAM + micro SD Slot Expandable up to 64GB'],
+ 'image_paths': ['full/f68044502a7920123084607390cb7e50d8782db7.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/414%2BrDTSSBL._SX300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Samsung-Galaxy-G318ML-Unlocked-Phone/dp/B0136NMO88',
+ 'title': [u'Samsung Galaxy Ace 4 Neo Lite G318ML Dual Sim Unlocked Cell Phone - Retail Packaging - Black']}
+2016-02-08 17:17:14,970 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/JUNING-Smartphone-MTK6572-Unlocked-Bluetooth/dp/B01B0LCG72> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:15,101 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41-0noOZk9L._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:15,203 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/JUNING-Smartphone-MTK6572-Unlocked-Bluetooth/dp/B01B0LCG72>
+{'features': [u' Unlocked Dual Sim Smartphone, with Android 4.4 KitKat',
+              u' 5.0" qHD Display (960x540)',
+              u' CUP:MTK6572,Dual core, 1.2GHz; GPU: Mali-400; RAM&ROM: 512MB RAM + 4GB ROM',
+              u' Dual Camera:Back-camera : 5.0MP;Front camera: 0.3MP',
+              u' 3G (WCDMA 850/2100) and 2G Quad Band (GSM 850/900/1800/1900) network , please buy the GSM/WCDMA SIM card. Do not buy the CDMA SIM card from them.'],
+ 'image_paths': ['full/0936dc49f544deb6099375885c95fbe19f5c19aa.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41-0noOZk9L._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/JUNING-Smartphone-MTK6572-Unlocked-Bluetooth/dp/B01B0LCG72',
+ 'title': [u'JUNING(TM) 5.0" Anroid 4.4 Smartphone MTK6572 Dual Core ROM 4GB 5.0MP Camera Unlocked Dual SIM Cell phones Moblie phone Wifi Bluetooth Black']}
+2016-02-08 17:17:16,305 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/huhushop-Ultrathin-Credit-Unlocked-Quadband/dp/B00CHW08DI> (referer: http://www.amazon.com/s?ie=UTF8&page=2&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:16,450 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41KYbEf8MhL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:16,551 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/huhushop-Ultrathin-Credit-Unlocked-Quadband/dp/B00CHW08DI>
+{'features': [u' Credit card size, ultra slim, easy put in wallet',
+              u' Easy to carry, this mini mobile phone is perfect for use as a secondary mobile phone: It a MUST have contingency mobile phone besides your smartphone',
+              u' Bright OLED, better vision than LCD',
+              u' Bluetooth, FM radio,touch shock,MP3 function,Alarm clock,Calendar',
+              u' GSM 850/900/1800/1900 MHz Unlocked'],
+ 'image_paths': ['full/fb14b992c1ab2da3f51b8d97b130ba0da3c69b49.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41KYbEf8MhL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/huhushop-Ultrathin-Credit-Unlocked-Quadband/dp/B00CHW08DI',
+ 'title': [u'huhushop(TM) Mini Ultrathin Credit Bank Card Size Cell Mobile Phone Unlocked GSM Quadband']}
+2016-02-08 17:17:16,696 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Unlocked-Android-Smartphone-Phones-BlackColor/dp/B00S29C342> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:16,836 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51FRnfId7wL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:16,937 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Unlocked-Android-Smartphone-Phones-BlackColor/dp/B00S29C342>
+{'features': [u' Note4 Style JYL N8000 5.5" Android 4.4 3G Smartphone',
+              u' Dual SIM,Quad Core,WiFi,GPS,Dual Camera,1+4G',
+              u' Features\tAir Gesture, Replaceable Battery, Back Touch, Long Standby, Narrow Frame, Flashlight',
+              u' Sensor: Compass, Proximity Sensor, Light Sensor, G-Sensor',
+              u' Packing List: Leather back cover \xd7 1, User manual - English \xd7 1, Power adapter (110-240V 50/60Hz) \xd7 1, Phone to USB cable \xd7 1, Rechargeable Li-ion battery \xd7 1, Wired stereo earphones with built-in MIC and clip \xd7 1, Cellphone \xd7 1'],
+ 'image_paths': ['full/3b7426feb68a35e7a02cba6c69324b3f60fd609b.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51FRnfId7wL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Unlocked-Android-Smartphone-Phones-BlackColor/dp/B00S29C342',
+ 'title': [u'Unlocked Note4 JYL 5.5" HD Android 4.4 OS 3G Smartphone Unlocked Cell Phone Android Phones (Dual SIM,Quad Core,WiFi,GPS,Dual Camera,1+4G) BlackColor']}
+2016-02-08 17:17:17,082 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/LG-SILVER-METALLIC-FACTORY-UNLOCKED/dp/B00Z90RSVA> (referer: http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:17,240 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51Ly3iq8BKL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:17,342 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/LG-SILVER-METALLIC-FACTORY-UNLOCKED/dp/B00Z90RSVA>
+{'features': [],
+ 'image_paths': ['full/22e5464611af77499154409380c866d1b6937f8c.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51Ly3iq8BKL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/LG-SILVER-METALLIC-FACTORY-UNLOCKED/dp/B00Z90RSVA',
+ 'title': [u'LG G4C H525N 8GB 8MP 5-IN SILVER/METALLIC GREY FACTORY UNLOCKED 4G/LTE CELL PHONE']}
+2016-02-08 17:17:20,217 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/POSH-Micro-S240b-Micro-size-Smartphone/dp/B013788R24> (referer: http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:20,224 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Universal-Smartphone-Cellphone-Essentials-Hands-Free/dp/B00ZH5PSCI> (referer: http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:20,368 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41aLsGrIZPL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:20,415 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41qi0c9hRWL._SX300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:20,469 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/POSH-Micro-S240b-Micro-size-Smartphone/dp/B013788R24>
+{'features': [u' 2.4" LCD Capacitive Touch-panel, Micro-size Display, 2MP Primary Camera, VGA Front Camera',
+              u' Powerful Dual-Core 1.0 GHz Mediatek MT 6572M Processor, 512MB RAM, 4GB Internal Memory with Micro SD Support',
+              u' Enhanced 4G HSDPA+ Network Support - GSM/Edge/4G HSDPA+ 850/1900/2100',
+              u' 650mAh Battery, Micro USB Charger, Micro SIM, 1 Year USA Warranty',
+              u' Package Includes: Phone, Wall Adapter, Charging Cable, Headphones, Manual, Battery, Screen Protector',
+              u' Unlocked cell phones are compatible with GSM carriers like AT&T and T-Mobile as well as with GSM SIM cards (e.g. H20, Straight Talk, and select prepaid carriers), Unlocked cell phones will not work with CDMA Carriers like Sprint, Verizon, Boost or Virgin'],
+ 'image_paths': ['full/89e24369744708713b6ca7c36726850f89afec0a.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41aLsGrIZPL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/POSH-Micro-S240b-Micro-size-Smartphone/dp/B013788R24',
+ 'title': [u'POSH Micro X S240b - 2.4", 4G, Android 4.4 Kit Kat, Dual-core, 4GB , 2MP Camera, Ultra Compact, Micro-size UNLOCKED Smartphone (Black)']}
+2016-02-08 17:17:20,516 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Universal-Smartphone-Cellphone-Essentials-Hands-Free/dp/B00ZH5PSCI>
+{'features': [u' Material: TPU + spring steel ,supporting both vertical and horizontal viewing.',
+              u' BEST WAY TO WATCH - No more struggles as you watch Netflix or play your favorite game. This device stand makes for an enjoyable hands-free experience.',
+              u" EYE-CATCHING DESIGN - Cute? Check! Cool? Check! Funny? Check! It is playfully designed to bring out the kid in you, whether you're viewing photos, playing games or watching videos.",
+              u" RELIABLE STAND QUALITY - Made of high grade plastic and rubber, the OK phone holder acts as a stand to keep your phone in place while you use it. Now you don't have to hold your device while watching your favorite videos.",
+              u' SMALL AND EASY TO BRING - This universal phone stand is so lightweight and portable, you can practically bring it anywhere. It takes up very little space in your bag, you can even fit it in your pocket.'],
+ 'image_paths': ['full/325a5d86ee5275cdaa0e10aafae893cf4df28b02.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41qi0c9hRWL._SX300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Universal-Smartphone-Cellphone-Essentials-Hands-Free/dp/B00ZH5PSCI',
+ 'title': [u'DTECH @ 2 peces Thumb Shape Cell Phone Stands Mobile phone Tablet Thumb Lazy Stents for iPhone 5 , iPhone 6 plus, Samsung Apple Lenovo Dell Asus Google iPhone LG HTC Nokia Motorola iPad iPad2 and All Other Mobile Phones,Ok Stand Universal Flexible Thumb Smartphone Stand Holder, Tablet Mount Holder, for Any Cellphone, Stand Holder for Apple iPhone 4 4s iphone 5 Samsung Galaxy s3 SIII Samsung GALAXY S6,S6 EDGE.Note II iPad 2 3 ipad mini iPod Nokia LG HTC One X etc,RING Essentials " Cell Phone and Tablets Anti Drop Ring for iPhone 6 plus iPad mini iPad2 iPad iPod Samsung GALAXY NOTE S5 Universal Mobile Devices,OK Phone Holder [Funny Thumb Phone Stand] Universal Mount Holder, Fits Phones and Tablets, Keeps Device Secure, Hands-Free Watching, Protects Phone from Sliding and Scratches,Smart Mobile Phone and tablet PC Stand Holder Portable OK Stand Thumb for iPad, iPad Mini, iPhone 6, iPhone 6 plus, iPhone 5, Samsung Galaxy HTC and other Mobile Phones Tablet (BLACK AND BLUE)']}
+2016-02-08 17:17:21,526 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Ultra-thin-Unlocked-Phones-Smartphone-Android/dp/B012VX5RBU> (referer: http://www.amazon.com/s?ie=UTF8&page=3&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:21,671 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/41Uhwr1a-XL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:21,772 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Ultra-thin-Unlocked-Phones-Smartphone-Android/dp/B012VX5RBU>
+{'features': [u' Android OS 4.4 Smart Phone',
+              u' Support Bluetooth, WiFi, OTG, GPS, GSM & WCDMA',
+              u' 5.0 Inch screen 0.3MP+2MP Camera',
+              u' Spectrum: GSM:850/900/1800/1900MHz WCDMA:850/2100MHz',
+              u' Size: 144.9X72.2X8.15mm'],
+ 'image_paths': ['full/221cb0bf54b7118acf9f19a196e007e3e0c8068b.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/41Uhwr1a-XL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Ultra-thin-Unlocked-Phones-Smartphone-Android/dp/B012VX5RBU',
+ 'title': [u'Ultra-thin Dual Sim Unlocked Cell Phones M5 Smartphone 5 Touch Screen Android 4.4 Moblie Phone Gsm/wcdma Dual Sim Smart Phone Black']}
+2016-02-08 17:17:22,253 [MainThread  ] [INFO ]  Received SIGINT, shutting down gracefully. Send again to force 
+2016-02-08 17:17:22,253 [MainThread  ] [INFO ]  Closing spider (shutdown)
+2016-02-08 17:17:22,716 [MainThread  ] [DEBUG]  Crawled (200) <GET http://www.amazon.com/Lenovo-Smart-Phone-Android-2-0GHz/dp/B00MOAR5PM> (referer: http://www.amazon.com/s?ie=UTF8&page=1&rh=n%3A2407749011%2Ck%3Amobile%20phones)
+2016-02-08 17:17:22,859 [MainThread  ] [DEBUG]  File (uptodate): Downloaded image from <GET http://ecx.images-amazon.com/images/I/51e7aW719tL._SY300_QL70_.jpg> referred in <None>
+2016-02-08 17:17:22,961 [MainThread  ] [DEBUG]  Scraped from <200 http://www.amazon.com/Lenovo-Smart-Phone-Android-2-0GHz/dp/B00MOAR5PM>
+{'features': [u' Brand & Model: Lenovo K900',
+              u' Operating System: Android 4.2',
+              u' CPU: Inter Atom Z2760 2.0GHz Dual Core',
+              u' RAM: 2GB + ROM: 16GB.  External memory: nonsupport',
+              u' SIM Card Quantity: Single SIM (Micro SIM)/ Dual Bands'],
+ 'image_paths': ['full/87060f966e11eb1a2b6e0257091c8cf0ce5e8326.jpg'],
+ 'image_urls': [u'http://ecx.images-amazon.com/images/I/51e7aW719tL._SY300_QL70_.jpg'],
+ 'product_url': 'http://www.amazon.com/Lenovo-Smart-Phone-Android-2-0GHz/dp/B00MOAR5PM',
+ 'title': [u'Lenovo K900 Smart Cell Phone (with 32GB TF Card) 5.5 Inch Android 4.2 OTG 13MP 1920*1080 (FHD) RAM 2GB+ROM 16GB Inter Atom 2.0GHz Dual Core Micro SIM WCDMA GSM (Phone+ 32GB TF Card)']}
+2016-02-08 17:17:23,026 [MainThread  ] [INFO ]  Received SIGINT twice, forcing unclean shutdown
+2016-02-08 17:17:23,029 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/Sony-Dual-SIM-Unlocked-Phone-U-S-Champagne/dp/B00ASZ00TI> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,032 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/ECOOPRO%C2%AE-Rugged-GSM-Cell-Phone/dp/B00JGNTW9M> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,036 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/Silver-Smartphone-Mtk6572a-Android-No-contract/dp/B00WBALZD8> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,038 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/MuchBuy-Classic-Vintage-Charger-Camera-white/dp/B014GM6WAY> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,040 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/s?ie=UTF8&page=4&rh=n%3A2407749011%2Ck%3Amobile%20phones> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,043 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/Jethro-Unlocked-Quad-band-Keyboard-Firmware/dp/B00NL3CXQW> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,048 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/BLU-Unlocked-Dual-SIM-Phone-Camera/dp/B00O65HXVE> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2016-02-08 17:17:23,051 [MainThread  ] [DEBUG]  Retrying <GET http://www.amazon.com/JUNING-Unlocked-Phones-Cameras-Smartphone/dp/B01AWXY0A0> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
