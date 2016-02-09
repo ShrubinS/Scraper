@@ -60,7 +60,7 @@ def _crawl_():
         soupthis = []
         if next_button:
             next_ = next_button[0]['href']
-            next_link = "http://www.walmart.com/" + next_
+            next_link = "http://www.walmart.com/search/" + next_
             r = requests.get(next_link)
             data = r.text
             soupthis = BeautifulSoup(data)
