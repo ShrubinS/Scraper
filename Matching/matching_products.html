@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+		function print(text) { document.querySelector("#output").innerHTML += text + "\n"; }
+		</script>
+        <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+		<style>#output { background-color: #222; width: 80%; min-height: 300px; margin: 15px auto; color: #bbb; padding: 20px;}</style>
+		<title>JavaScript test page</title>
+	</head>
+	<body>
+		<pre id="output"></pre>
+		<script type="text/javascript">
+        //Standard implementation of Edit Distance    
+		getEditDistance = function(a, b){
+        if(a.length == 0) return b.length; 
+        if(b.length == 0) return a.length; 
+
+        var matrix = [];
+
+        var i;
+        for(i = 0; i <= b.length; i++){
+                matrix[i] = [i];
+        }
+
+        var j;
+        for(j = 0; j <= a.length; j++){
+            matrix[0][j] = j;
+        }
+
+        for(i = 1; i <= b.length; i++){
+            for(j = 1; j <= a.length; j++){
+                if(b.charAt(i-1) == a.charAt(j-1)){
+                    matrix[i][j] = matrix[i-1][j-1];
+                } else {
+                    matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, 
+                                    Math.min(matrix[i][j-1] + 1
+                                         matrix[i-1][j] + 1));
+                }
+            }
+        }
+
+        return matrix[b.length][a.length];
+        };
+            
+        
+        $.getJSON("amazon-titles.json", function(amazon_json) {
+            var map = {};
+            $.getJSON("walmart-titles.json", function(walmart_json){
+                var i = 0;
+                
+                // Not the best way to do it, a faster/better way may be to sort the product titles
+                // Then could use a log(n) search to pick matching range of "First Character"
+                // Apply edit distance to only this result set.
+                // This way we could prune a (hopefully) major chunk of products, while still getting an acceptable accuracy
+                // The only issue is because "Unlocked" phones are specifically used, many phone titles may start with Unlocked.
+                // Also, since I don't really have all the data with me, I did not use any splicing on title names, which I would do
+                // Also, I realized that my amazon_json was not really in json format, but that can easily be modified in the amazon_spider
+                
+                while(amazon_json.products[i]){
+                    var j = 0;
+                    var min_distance = amazon_json.products[i].title.length;
+                    while(walmart_json.products[j] && min_distance != 0){
+                        var distance = getEditDistance(amazon_json.products[i].title.toLowerCase, walmart_json.products[j].title.toLowerCase);
+                        if(distance < min_distance){
+                            min_distance = distance;
+                            map(amazon_json.products[i].title) = walmart_json.products[j];
+                        }
+                        j++;
+                    }
+                    i++;
+                }
+                print map;
+            });
+            var map_str = JSON.stringify(map);
+            var dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(map_str);
+            var link = document.getElementById('link').href = dataUri;
+        });        
+            
+		</script>
+        
+        <a href="#" id="link" download="mappings.json">
+            Download as JSON
+        </a>
+	</body>
+</html>
